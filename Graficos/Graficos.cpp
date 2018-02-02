@@ -39,23 +39,68 @@ void actualizar()
 
 void dibujar()
 {
+	//triangulo1
 	glPushMatrix();
-	glTranslatef(0.2f, -0.2f, 0.0f);
-	//glRotatef(angulo, 1.0f, 0.0f, 0.0f);//Afecta eje x
-	//glRotatef(angulo, 0.0f, 1.0f, 0.0f); //Aefcta eje y
-	glRotatef(angulo, 0.0f, 0.0f, 1.0f); //Aefcta eje z
+	glTranslatef(0.0f, 0.2f, 0.0f);
+	//glRotatef(angulo, 0.0f, 0.0f, 0.0f);//Afecta eje x
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f); //Aefecta eje y
+	//glRotatef(angulo, 1.0f, 1.0f, 1.0f); //Aefcta eje z
 	glScalef(0.2f, 0.2f, 0.2f);
 	glBegin(GL_TRIANGLES); //Inicia la rutina con un modo de dibujo
 
 	
 
-	glColor3f(1.0f, 0.0f, 0.0f);
+	glColor3f(1.0f, 0.8f, 0.0f);
 	glVertex3f(-1.0f, 0.0f, 0.0f);
 
-	glColor3f(0.0f, 1.0f, 0.0f);
+	glColor3f(1.0f, 0.8f, 0.0f);
 	glVertex3f(0.0f, 1.0f, 0.0f);
 
-	glColor3f(0.0f, 0.0f, 1.0f);
+	glColor3f(1.0f, 1.0f, 1.0f);
+	glVertex3f(1.0f, 0.0f, 0.0f);
+	glEnd(); // Finaliza la rutina
+	glPopMatrix();
+
+	//Triangulo2
+	glPushMatrix();
+	glTranslatef(-0.2f, 0.0f, 0.0f);
+	//glRotatef(angulo, 1.0f, 0.0f, 0.0f);//Afecta eje x
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f); //Aefcta eje y
+	//glRotatef(angulo, 0.0f, 0.0f, 1.0f); //Aefcta eje z
+	glScalef(0.2f, 0.2f, 0.2f);
+	glBegin(GL_TRIANGLES); //Inicia la rutina con un modo de dibujo
+
+
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(-1.0f, 0.0f, 0.0f);
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(0.0f, 1.0f, 0.0f);
+
+	glColor3f(1.0f, 1.0f, 1.0f);
+	glVertex3f(1.0f, 0.0f, 0.0f);
+	glEnd(); // Finaliza la rutina
+	glPopMatrix();
+
+	//triangulo3
+	glPushMatrix();
+	glTranslatef(0.2f, 0.0f, 0.0f);
+	//glRotatef(angulo, 1.0f, 0.0f, 0.0f);//Afecta eje x
+	glRotatef(angulo, 0.0f, 1.0f, 0.0f); //Afecta eje y
+	//glRotatef(angulo, 0.0f, 0.0f, 1.0f); //Aefcta eje z
+	glScalef(0.2f, 0.2f, 0.2f);
+	glBegin(GL_TRIANGLES); //Inicia la rutina con un modo de dibujo
+
+
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(-1.0f, 0.0f, 0.0f);
+
+	glColor3f(1.0f, 0.8f, 0.0f);
+	glVertex3f(0.0f, 1.0f, 0.0f);
+
+	glColor3f(1.0f, 1.0f, 1.0f);
 	glVertex3f(1.0f, 0.0f, 0.0f);
 	glEnd(); // Finaliza la rutina
 	glPopMatrix();
